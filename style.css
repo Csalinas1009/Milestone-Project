@@ -5,7 +5,42 @@
 }
 
 #gameDiv {
-    width: 1200px;
-    height: 600px;
-    border: 1px solid black;
+    width: 750px;
+    height: 350px;
+    border: 10px solid rgb(12, 140, 149);
+    background-color: white;
+    position: absolute;
+    left: 1vh;
+}
+
+body{
+    background-color: rgb(34, 33, 33);
+}
+
+#player{
+    position: relative;
+    top: 330px;
+}
+
+.animate {
+    animation: jump 1s linear;
+}
+
+@keyframes jump{
+    0%{top: 330px;}
+    30%{top: 275px;}
+    70%{top: 250px;}
+    100%{top: 320px;}
+}
+
+#enemy{
+    position: relative;
+    top: 286px;
+    left: 707px;
+    animation: move 1.5s infinite linear;
+}
+
+@keyframes move{
+    0%{left: 700px;}
+    100%{left: -45px;}
 }
