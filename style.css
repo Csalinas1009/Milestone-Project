@@ -37,7 +37,7 @@ body{
     position: relative;
     top: 286px;
     left: 707px;
-    animation: move 3s infinite linear
+    animation: move 1.5s infinite linear
 }
 
 /* .animateEnemy{
