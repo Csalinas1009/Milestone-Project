@@ -37,10 +37,59 @@ body{
     position: relative;
     top: 286px;
     left: 707px;
-    animation: move 1.5s infinite linear;
+    animation: move 3s infinite linear
 }
+
+/* .animateEnemy{
+
+    animation: move 10s infinite linear;
+
+} */
 
 @keyframes move{
     0%{left: 700px;}
     100%{left: -45px;}
+}
+
+#startButton{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: grey;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 15px 25px;
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+
+#resetButton{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: grey;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 15px 25px;
+    text-align: center;
+    position: relative;
+    top: 400px;
+}
+
+#scoring{
+    position: absolute;
+    color:aliceblue;
+    top: 400px;
+    left: 25px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
