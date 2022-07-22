@@ -48,7 +48,7 @@ body{
     position: relative;
     top: 391px;
     left: 1750px;
-    animation: move 2s infinite linear
+    animation: move 999s infinite linear
 }
 
 @keyframes move{
@@ -78,9 +78,9 @@ body{
 #scoring{
     position: absolute;
     color:rgb(13, 14, 14);
-    top: 100px;
-    left: 1900px;
+    top: 50px;
+    left: 1800px;
     font-weight: 600;
-    font-size: larger;
+    font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
