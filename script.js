@@ -7,7 +7,7 @@ var enemy = document.getElementById('enemy')
 
 //define audio on death and audio while playing
 var deathSound = new Audio('./assets/You Died.mp3');
-deathSound.volume = .90
+deathSound.volume = .10
 
 
 //reset button when game ends
@@ -26,7 +26,7 @@ window.onload = function () {
     setInterval(function () {
         score += 1
         var scoreLabel = document.getElementById('scoring');
-        scoreLabel.innerHTML = "Score " + score;
+        scoreLabel.innerHTML = "Score: " + score;
     }, 75)
 }
 //jump function for player
@@ -40,16 +40,20 @@ function jump() {
     }, 500);
 }
 
+
+
+
+
 //lose conditions
 var lose = setInterval(function () {
     var playerTop = parseInt(window.getComputedStyle(player).getPropertyValue('top'));
     var enemyLeft = parseInt(window.getComputedStyle(enemy).getPropertyValue('left'));
-    if (enemyLeft < 5 && enemyLeft > 0 && playerTop >= 300) {
+    if (enemyLeft <20 && enemyLeft > 0 && playerTop >= 400) {
         alert('Your score is ' + score + '!')
         document.getElementById('scoring')
         scoring.remove()
         document.getElementById('gameDiv').innerHTML = deathSound.play()
-        document.getElementById('gameDiv').innerHTML = '<img width="750" height="350" src="./assets/Dark_Souls_You_Died_Screen_-_Completely_Black_Screen_0-2_screenshot.png">';
+        document.getElementById('gameDiv').innerHTML = '<img width="1800" height="600" src="./assets/Dark_Souls_You_Died_Screen_-_Completely_Black_Screen_0-2_screenshot.png">';
     }
 })
 

@@ -5,12 +5,19 @@
 }
 
 #gameDiv {
-    width: 750px;
-    height: 350px;
+    width: 1800px;
+    height: 600px;
     border: 10px solid rgb(12, 140, 149);
     background-color: white;
     position: absolute;
-    left: 1vh;
+    left: 20vh;
+}
+
+#gameBackground{
+
+    width: 1800px;
+    height: 600px;
+    position: absolute;
 }
 
 body{
@@ -19,29 +26,33 @@ body{
 
 #player{
     position: relative;
-    top: 330px;
+    top: 440px;
+}
+
+#playerImg{
+    height: 75px;
+    width: auto;
 }
 
 .animate {
-    animation: jump 1s linear;
+    animation: jump 900ms;
 }
 
 @keyframes jump{
-    0%{top: 330px;}
-    30%{top: 275px;}
-    70%{top: 250px;}
-    100%{top: 320px;}
+    0%{top: 350px;}
+    
+    
 }
 
 #enemy{
     position: relative;
-    top: 286px;
-    left: 707px;
-    animation: move 1s infinite linear
+    top: 391px;
+    left: 1750px;
+    animation: move 2s infinite linear
 }
 
 @keyframes move{
-    0%{left: 700px;}
+    0%{left: 1700px;}
     100%{left: -45px;}
 }
 
@@ -60,15 +71,16 @@ body{
     padding: 15px 25px;
     text-align: center;
     position: relative;
-    top: 400px;
-    right: 750px;
+    top: 650px;
+    right: 85px;
 }
 
 #scoring{
     position: absolute;
-    color:aliceblue;
-    top: 400px;
-    left: 25px;
+    color:rgb(13, 14, 14);
+    top: 100px;
+    left: 1900px;
     font-weight: 600;
+    font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
