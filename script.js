@@ -1,12 +1,12 @@
 //define player
-var character = document.getElementById('player')
+const character = document.getElementById('player')
 
 //define enemy npc
-var enemy = document.getElementById('enemy')
+const enemy = document.getElementById('enemy')
 
 
 //define audio on death and audio while playing
-var deathSound = new Audio('./assets/You Died.mp3');
+const deathSound = new Audio('./assets/You Died.mp3');
 deathSound.volume = .10
 
 
@@ -19,7 +19,7 @@ resetButton.addEventListener('click', () => {
 
 
 //score counter
-var score = 0
+let score = 0
 
 window.onload = function () {
 
@@ -45,7 +45,7 @@ function jump() {
 
 
 //lose conditions
-var lose = setInterval(function () {
+const lose = setInterval(function () {
     var playerTop = parseInt(window.getComputedStyle(player).getPropertyValue('top'));
     var enemyLeft = parseInt(window.getComputedStyle(enemy).getPropertyValue('left'));
     if (enemyLeft <20 && enemyLeft > 0 && playerTop >= 400) {

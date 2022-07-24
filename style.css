@@ -48,7 +48,7 @@ body{
     position: relative;
     top: 391px;
     left: 1750px;
-    animation: move 999s infinite linear
+    animation: move 2.5s infinite linear
 }
 
 @keyframes move{
