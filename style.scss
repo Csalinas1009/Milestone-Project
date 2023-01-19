@@ -1,0 +1,82 @@
+$color_1: rgb(13, 14, 14);
+$font-family_1: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$background-color_1: white;
+$background-color_2: rgb(34, 33, 33);
+$background-color_3: rgb(138, 206, 89);
+
+@keyframes jump {
+	0% {
+		top: 350px;
+	}
+}
+@keyframes move {
+	0% {
+		left: 1700px;
+	}
+	100% {
+		left: -45px;
+	}
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+#gameDiv {
+	width: 1800px;
+	height: 600px;
+	border: 10px solid rgb(12, 140, 149);
+	background-color: $background-color_1;
+	position: absolute;
+	left: 20vh;
+}
+#gameBackground {
+	width: 1800px;
+	height: 600px;
+	position: absolute;
+}
+body {
+	background-color: $background-color_2;
+}
+#player {
+	position: relative;
+	top: 440px;
+}
+#playerImg {
+	height: 75px;
+	width: auto;
+}
+.animate {
+	animation: jump 900ms;
+}
+#enemy {
+	position: relative;
+	top: 391px;
+	left: 1750px;
+	animation: move 2.5s infinite linear;
+}
+#resetButton {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+	background-color: $background-color_3;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	padding: 15px 25px;
+	text-align: center;
+	position: relative;
+	top: 650px;
+	right: 85px;
+}
+#scoring {
+	position: absolute;
+	color: $color_1;
+	top: 50px;
+	left: 1800px;
+	font-weight: 600;
+	font-size: 40px;
+	font-family: $font-family_1;
+}
